@@ -7,7 +7,8 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @book.content %>
+  <!-- <%== %>で書くとhtml文がそのまま表示されなくなる -->
+  <%== @book.content %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
